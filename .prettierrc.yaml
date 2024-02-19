@@ -1,0 +1,24 @@
+---
+tabWidth: 2
+useTabs: false
+bracketSameLine: false
+endOfLine: lf # lf | crlf | cr | auto
+singleAttributePerLine: false
+printWidth: 90
+
+overrides:
+  - files:
+      - "*.css"
+    options:
+      semi: true
+      singleQuote: false
+      bracketSpacing: false
+  - files:
+      - "*.js"
+      - "*.jsx"
+      - "*.ts"
+      - "*.tsx"
+    options:
+      semi: false
+      singleQuote: false
+      tabWidth: 2

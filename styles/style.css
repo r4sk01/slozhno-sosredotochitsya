@@ -1,5 +1,163 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+/* 1.0 PAGE */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+    font-family: var(--main-font-family);
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-inline-size: calc(1440px - var(--content-padding));
+}
+
+/* 2.0 Header */
+
+/* 2.1 General Header Layout */
+
+.header {
+    position: relative;
+    margin-bottom: 40px;
+    padding: var(--content-padding);
+    block-size: 100vh;
+    min-block-size: 668px;
+    display: grid;
+    grid-template-rows: 1fr min-content 1fr;
+    align-content: space-between;
+}
+
+/* 2.2  REC AND BULB SIGN*/
+
+.header__light {
+    position: absolute;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    inset-inline-end: calc(var(--content-padding) + 8px);
+    inset-block-start: calc(var(--content-padding) + 4px);
+}
+
+.header__light::after {
+    content: '';
+    margin-inline-start: 10px;
+    display: inline-block;
+    inline-size: 12px;
+    block-size: 12px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+/* 2.3 Header Theme Switch Menu */
+
+.header__theme-menu {
+    justify-self: end;
+    align-self: center;
+}
+
+.header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header__theme-menu-button {
+    padding: 0 13px;
+    block-size: 26px;
+    background-color: transparent;
+    border: none;
+    text-transform: lowercase;
+    text-align: center;
+    font-size: var(--base-text-size);
+    line-height: 100%;
+    color: var(--button-main-color);
+    cursor: pointer;
+}
+
+.header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
+    outline: 1px solid var(--button-hover-color);
+}
+
+.header__theme-menu-button_active {
+    outline: 1px solid currentColor;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* 2.4 Big Title */
+
+.header__title {
+    justify-self: start;
+    font-size: var(--header-title-font-size);
+    color: var(--header-title-color);
+    text-shadow: 4px 4px 0 var(--header-title-shadow-color);
+    font-weight: 700;
+    font-style: normal;
+    line-height: 82.5%;
+}
+
+/* 2.5 Text Description in The bottom of Header */
+
+.header__description {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 130%;
+    font-weight: 700;
+    font-size: var(--base-text-size);
+}
+
+/* 2.5.1 Background Color and Text Color */
+
+.title-decor {
+    background-color: var(--accent-color);
+    color: var(--sub-header-text-color);
+}
+
+/* 2.6 Header Arrows */
+
+.decorated-zone::before,
+.decorated-zone::after {
+    position: absolute;
+    inline-size: 25px;
+    block-size: 25px;
+    content: '';
+}
+
+.decorated-zone::before {
+    inset-block-start: var(--content-padding);
+    inset-inline-end: var(--content-padding);
+    border-block-start: 1px solid var(--header-decor-color);
+    border-inline-end: 1px solid var(--header-decor-color);
+}
+
+.decorated-zone::after {
+    inset-inline-start: var(--content-padding);
+    inset-block-end: var(--content-padding);
+    border-block-end: 1px solid var(--header-decor-color);
+    border-inline-start: 1px solid var(--header-decor-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 0.0 Adaptive */
+
+@media screen and (width >= 768px) {
+
+}
+
+@media screen and (width >= 1024px) {
+
 }

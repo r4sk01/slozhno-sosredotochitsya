@@ -33,10 +33,27 @@ picture {
   padding: 0;
 }
 
+button {
+  appearance: none;
+}
+
 button,
 a {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+button:focus,
+a:focus {
+  outline: none;
+}
+
+a:focus-visible {
+  outline: 1px solid currentColor;
+}
+
+button:focus-visible {
+  box-shadow: 0 1px 0 currentColor;
 }
