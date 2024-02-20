@@ -98,6 +98,7 @@
 /* 2.5 Text Description in The bottom of Header */
 
 .header__description {
+    justify-self: end;
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -138,26 +139,42 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 0.0 Adaptive */
 
 @media screen and (width >= 768px) {
 
+    .page {
+        --content-padding: 20px;
+        --header-title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    }
+
+    .header {
+        margin-bottom: 60px;
+    }
+
+    .header__title {
+        position: relative;
+        inset-inline-end: var(--content-padding);
+    }
+
+    .header__description {
+        max-inline-size: 364px;
+    }
 }
 
 @media screen and (width >= 1024px) {
+
+    .header__theme-menu {
+        justify-self: center;
+        align-self: start;
+    }
+
+    .header__theme-menu-list {
+        flex-direction: row;
+    }
+
+    .header__description {
+        max-inline-size: 491px;
+    }
 
 }
