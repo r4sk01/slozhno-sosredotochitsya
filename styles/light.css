@@ -10,10 +10,15 @@
     чем стили в медиазапросе предпочтений пользователя
   */
     --accent-color: #FF8DCB;
-    /*--background-color: ;*/
+    --background-color: #FFF1F7;
     --background-image: url(../images/cover-image-light.png);
     --button-main-color: #353430;
     --button-hover-color: rgba(50, 49, 45, 0.40);
+    --card-title-color: #353430;
+    --card-description-color: #353430;
+
+
+    --content-title-color: #353430;
     --header-decor-color: #353430;
     --header-title-color: #FFC2E6;
     --header-title-shadow-color: #FF0070;
@@ -28,10 +33,15 @@
 @media (prefers-color-scheme: light) {
     .page {
         --accent-color: #FF8DCB;
-        /*--background-color: ;*/
+        --background-color: #FFF1F7;
         --background-image: url(../images/cover-image-light.png);
         --button-main-color: #353430;
         --button-hover-color: rgba(50, 49, 45, 0.40);
+        --card-title-color: #353430;
+        --card-description-color: #353430;
+
+
+        --content-title-color: #353430;
         --header-decor-color: #353430;
         --header-title-color: #FFC2E6;
         --header-title-shadow-color: #FF0070;

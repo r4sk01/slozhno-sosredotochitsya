@@ -14,6 +14,11 @@
     --background-image: url(../images/cover-image-dark.png);
     --button-main-color: #FF0070;
     --button-hover-color: rgba(255, 0, 112, 0.4);
+    --card-title-color: #000028;
+    --card-description-color: #F1B2CE;
+
+
+    --content-title-color: #FF0070;
     --header-decor-color: #FF0070;
     --header-title-color: #DB00FF;
     --header-title-shadow-color: #FF0070;
@@ -28,6 +33,11 @@
         --background-image: url(../images/cover-image-dark.png);
         --button-main-color: #FF0070;
         --button-hover-color: rgba(255, 0, 112, 0.4);
+        --card-title-color: #000028;
+        --card-description-color: #F1B2CE;
+
+
+        --content-title-color: #FF0070;
         --header-decor-color: #FF0070;
         --header-title-color: #DB00FF;
         --header-title-shadow-color: #FF0070;

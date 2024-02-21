@@ -7,15 +7,22 @@
     --accent-color: #FF0070;
     --background-color: #000028;
     --background-image: url(../images/cover-image-dark.png);
-    --base-text-size: 18px;
     --button-main-color: #FF0070;
     --button-hover-color: rgba(255, 0, 112, 0.4);
-    --content-padding: 10px;
+    --card-title-color: #000028;
+    --card-description-color: #F1B2CE;
+
+
+    --content-title-color: #FF0070;
     --header-decor-color: #FF0070;
     --header-title-color: #DB00FF;
     --header-title-shadow-color: #FF0070;
-    --header-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    --main-font-family: "IBM Plex Mono";
     --plain-text-color: #F1B2CE;
     --sub-header-text-color: #000028;
+
+    /*Does not depend on theme*/
+    --base-font-family: "IBM Plex Mono";
+    --base-text-size: 18px;
+    --content-padding: 10px;
+    --header-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
