@@ -138,7 +138,9 @@
     border-inline-start: 1px solid var(--header-decor-color);
 }
 
-/* Main Content */
+/* 3.0 Main Content */
+
+/* 3.1 General Style for Main */
 
 .content {
     padding: 0 var(--content-padding);
@@ -146,6 +148,8 @@
     grid-template-columns: 1fr;
     gap: 50px;
 }
+
+/* 3.2 Styles for Content Sections */
 
 .content__section {
     display: grid;
@@ -205,6 +209,35 @@
     box-shadow: 0 1px currentColor;
 }
 
+/* 3.3 Gallery Section  */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.gallery__title {
+    color: var(--gallery-title-color);
+    font-size: var(--base-text-size);
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.gallery__images {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.gallery__image {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    inline-size: 100%;
+    block-size: 100%;
+}
+
 
 /* 0.0 Adaptive */
 
@@ -238,6 +271,39 @@
 
     .content__section:not(.special__format) {
         grid-template-columns: min-content 1fr;
+    }
+
+    .gallery {
+        gap: 20px;
+    }
+
+    .gallery__image-sun {
+        grid-area: sun;
+    }
+
+    .gallery__image-ice-cream {
+        grid-area: icecream;
+    }
+
+    .gallery__image-tape {
+        grid-area: tape;
+    }
+
+    .gallery__image-books {
+        grid-area: books;
+    }
+
+    .gallery__image-asia {
+        grid-area: asia;
+    }
+
+    .gallery__images {
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "sun sun icecream"
+        "tape books icecream"
+        "tape asia asia";
     }
 }
 
