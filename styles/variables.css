@@ -12,6 +12,9 @@
     --card-title-color: #000028;
     --card-description-color: #F1B2CE;
     --gallery-title-color: #000028;
+    --footer-title-color: #DB00FF;
+    --footer-title-shadow-color: #FF0070;
+
 
 
     --content-title-color: #FF0070;
@@ -26,4 +29,5 @@
     --base-text-size: 18px;
     --content-padding: 10px;
     --header-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --footer-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
