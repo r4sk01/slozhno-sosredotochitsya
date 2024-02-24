@@ -157,30 +157,30 @@
     gap: 20px;
 }
 
-.content__cards {
+.content-cards {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
 }
 
-.content__card {
+.content-cards__card {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
 }
 
-.content__card__extended__gap {
+.content__card_extended_gap {
     gap: 20px;
 }
 
-.content__title {
+.content-title {
     color: var(--content-title-color);
     font-size: var(--base-text-size);
     font-weight: 700;
     line-height: 130%;
 }
 
-.card__title {
+.content-cards__card__title {
     text-align: left;
     color: var(--card-title-color);
     font-size: var(--base-text-size);
@@ -192,7 +192,7 @@
     font-weight: 400;
 }
 
-.card__description {
+.content-cards__card__description {
     color: var(--card-description-color);
     font-size: var(--base-text-size);
     font-weight: 400;
@@ -282,11 +282,11 @@
         gap: 80px;
     }
 
-    .content__title {
+    .content-title {
         width: 236px;
     }
 
-    .content__section:not(.special__format) {
+    .content__section:not(.special-format) {
         grid-template-columns: min-content 1fr;
     }
 
@@ -298,7 +298,7 @@
         grid-area: sun;
     }
 
-    .gallery__image-ice-cream {
+    .gallery__image-icecream {
         grid-area: icecream;
     }
 
@@ -343,11 +343,11 @@
         max-inline-size: 491px;
     }
 
-    .content__title {
+    .content-title {
         width: 315px;
     }
 
-    .content__section.special__format .content__cards {
+    .content__section.special-format .content-cards {
         grid-template-columns: 1fr 1fr 1fr;
         align-items: start;
     }
